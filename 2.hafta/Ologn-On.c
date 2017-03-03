@@ -13,6 +13,7 @@ int pow(int x, int y){
 }
 long LongPow(int x,int n)
 {
+     step++;
     if(n==0) return 1;
     if(n==1) return x;
     if(n%2==0)
@@ -28,9 +29,9 @@ int main()
    int ust=3;
 
    printf("\nsonuc:%d",pow(taban,ust));
-   printf("\nsonuc:%d",LongPow(taban,ust));
+   printf("\nsonuc:%d step:%d",LongPow(taban,ust),step);
 
 
-
+  system("PAUSE");
     return 0;
 }
